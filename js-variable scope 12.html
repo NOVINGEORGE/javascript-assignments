@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta Charset="utf-8"/>
+	<title>javascript-global and local variable</title>
+	<script type="text/javascript">
+	var  Champion="";
+
+	function printchampion(){
+		document.write("<h1>"+Champion + "global</h1> <br/>");
+		document.write(Champion + "apple inside function <br/>");
+}
+	
+
+printchampion();
+document.write(Champion + " apple outside function <br/>");
+var  Champion="";//global
+
+
+function printchampion(){
+		document.write("<h1>"+Champion + "</h1> <br/>");
+		document.write(Champion + "apple inside function <br/>");
+}
+	
+
+printchampion();
+document.write(Champion + " apple outside function <br/>");
+var  Champion="";//global
+
+	
+	
+
+
+
+	</script>
+
+
+
+</head>
+
+</html>
